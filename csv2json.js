@@ -14,7 +14,7 @@ var jsonarray = [];
 csvfile.forEach(function(part) {
     temp = {}
     row = part.split(",")
-    for(var i = 0; i < column_header.length; i++){
+    for(var i = 0; i < column_header.length; i++) {
         temp[column_header[i]] = row[i];
     }
     jsonarray.push(temp);
