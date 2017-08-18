@@ -8,7 +8,7 @@ var csvfile = fs.readFileSync('CSV.csv').toString();
 
 csvfile = csvfile.split("\n");
 
-var column_header = csvfile.split(",");
+var column_header = csvfile.shift().split(",");
 
 var jsonarray = [];    
 csvfile.forEach(function(part) {
